@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qabulga yozilish - Sog'lom Hayot klinikasi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><span class="belgi">+</span> Sog'lom Hayot</a>
+            <nav>
+                <a href="index.html">Bosh sahifa</a>
+                <a href="index.html#xizmatlar">Xizmatlar</a>
+                <a href="index.html#shifokorlar">Shifokorlar</a>
+                <a href="qabul.html">Qabulga yozilish</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container qabul-sahifa">
+
+        <aside class="yon-panel">
+            <h2>Qabulga yozilish</h2>
+            <p>Formani to'ldiring. Administrator 30 daqiqa ichida qabul vaqtini tasdiqlash uchun qo'ng'iroq qiladi.</p>
+
+            <h3>Eslatma</h3>
+            <ul>
+                <li>Pasport yoki ID kartangizni olib keling</li>
+                <li>Oldingi tahlillar bo'lsa, ularni ham oling</li>
+                <li>Qabuldan 10 daqiqa oldin keling</li>
+            </ul>
+            <p>Dush - Shan: 08:00 - 19:00</p>
+        </aside>
+
+        <div class="forma-quti">
+            <form action="#" method="post">
+
+                <h3 class="forma-bolim">1. Shaxsiy ma'lumotlar</h3>
+
+                <div class="ikki-ustun">
+                    <div>
+                        <label for="ism">Ism va familiya</label>
+                        <input type="text" id="ism" name="ism" placeholder="Aziz Karimov" required>
+                    </div>
+                    <div>
+                        <label for="tugilgan">Tug'ilgan sana</label>
+                        <input type="date" id="tugilgan" name="tugilgan" required>
+                    </div>
+                </div>
+
+                <label for="telefon">Telefon raqam</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="+998 90 123 45 67" required>
+
+                <h3 class="forma-bolim">2. Shifokor va vaqt</h3>
+
+                <div class="ikki-ustun">
+                    <div>
+                        <label for="mutaxassis">Mutaxassislik</label>
+                        <select id="mutaxassis" name="mutaxassis">
+                            <option>Terapevt</option>
+                            <option>Kardiolog</option>
+                            <option>Pediatr</option>
+                            <option>Tish shifokori</option>
+                        </select>
+                <div class="ikki-ustun">
+                    <div>
+                        <label for="sana">Qabul sanasi</label>
+                        <input type="date" id="sana" name="sana" required>
+                    </div>
+                    <div>
+                        <label for="vaqt">Qabul vaqti</label>
+                        <input type="time" id="vaqt" name="vaqt" min="08:00" max="19:00" required>
+                    </div>
+                </div>
+
+                <h3 class="forma-bolim">3. Qo'shimcha</h3>
+
+                <div class="radio-guruh">
+                    <label><input type="radio" name="tur" value="birinchi" checked> Birinchi marta</label>
+                    <label><input type="radio" name="tur" value="takroriy"> Takroriy qabul</label>
+                </div>
+
+                <label for="shikoyat">Shikoyatingiz</label>
+                <textarea id="shikoyat" name="shikoyat" rows="4" placeholder="Sizni nima bezovta qilmoqda?"></textarea>
+
+                <label class="rozilik">
+                    <input type="checkbox" name="rozilik" required>
+                    Shaxsiy ma'lumotlarimni qayta ishlashga roziman
+                </label>
+
+                <button type="submit" class="tugma">Qabulga yozilish</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Sayt oxiri -->
+    <footer>
+        <div class="container">
+        </div>
+    </footer>
+
+</body>
+</html>
